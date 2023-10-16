@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    font-family: 'Roboto';
+}
+
+body {
+    margin: 0px;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(images/title_image.jpg);
+    /*<a href="https://www.freepik.com/free-photo/hands-only-mechanic-holding-tire-repair-garage-replacement-winter-summer-tires_9819076.htm">Image by standret</a> on Freepik*/
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0));
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #cc2936;
+    position: absolute;
+    left: -10%;
+    bottom: -20px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover{
+    color: #cc2936;
+}
+
+.navbar ul li:hover::after{
+    width: 120%;
+}
+
+
+.titleContent{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.titleContent h1{
+    font-size: 96px;
+    font-weight: 500;
+    margin-top: 80px;
+}
+
+.contactButton{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    border: none;
+    background: #cc2936;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contactButton:hover{
+    background: #cc2936;
+}
+
