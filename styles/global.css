@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap');
+
+*{
+    font-family: 'Roboto';
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.row{
+    display: flex;
+}
+
+.shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    z-index: 100;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    color: #191919;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 0%;
+    width: 120%;
+    background: #cc2936;
+    position: absolute;
+    left: -10%;
+    bottom: -16px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover{
+    color: #cc2936;
+}
+
+.navbar ul li:hover::after{
+    height: 3px;
+}
+
+.logo{
+    cursor: pointer;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.logo-text{
+    font-family: 'Alumni Sans Collegiate One';
+    color: #cc2936;
+    font-size: 25px;
+    margin: 0;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-button{
+    width: 200px;
+    padding: 15px;
+    margin: 0px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    border: none;
+    background: #cc2936;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-button:hover{
+    background: #ffe20a;
+    color: #191919;
+}
+
+footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #191919;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    padding-top: 30px;
+}
+
+footer h4{
+    font-weight: 400;
+    margin: 0;
+    margin-left: 50px;
+}
+
+footer p{
+    margin: 10px;
+    margin-left: 50px;
+}
+
+footer a{
+    font-weight: 300;
+    margin: 10px;
+    margin-left: 50px;
+    color: #fff;
+}
+
+#copyright{
+    justify-content: center;
+}
