@@ -1,0 +1,115 @@
+#grid-container{
+    display: grid;
+    grid-template-columns: 5% 1fr 5% 1fr 5%;
+    grid-template-rows: 100px 550px 100px 600px 100px;
+}
+
+#contact-form{
+    grid-column: 2 / 2;
+    grid-row: 2 / 4;
+    background-color: #cc2936;
+    color: #fff;
+    z-index: 20;
+}
+
+#contact-form h4 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-left: 10%;
+}
+
+#contact-text{
+    grid-column: 4 / 4;
+    grid-row: 2 / 2;
+    font-size: 40px;
+    font-weight: 300;
+    color: #191919;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-text-row{
+    display: flex;
+    align-items: center;
+}
+
+#location-bar{
+    grid-column: 1 / 6;
+    grid-row: 3 / 6;
+    background-color: #1b1c22;
+}
+
+#location-text{
+    grid-column: 2 / 2;
+    grid-row: 4 / 4;
+    font-size: 40px;
+    font-weight: 300;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#map{
+    grid-column: 4 / 4;
+    grid-row: 4 / 5;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.material-icons{
+    color: #cc2936;
+    margin: 20px;
+}
+
+input[name=email]{
+    width: 70%;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    border: none;
+    border-radius: none;
+    font-size: 16px;
+    background-color: #fff;
+    padding: 12px 12px 12px 12px;
+    color: #191919;
+}
+
+textarea[name=message]{
+    width: 70%;
+    margin: 0;
+    margin-left: 10%;
+    border: none;
+    border-radius: none;
+    font-size: 16px;
+    background-color: #fff;
+    padding: 12px 12px 12px 12px;
+    height: 200px;
+    color: #191919;
+}
+
+.send-button{
+    width: 200px;
+    padding: 15px;
+    margin: 0;
+    margin-top: 100px;
+    margin-right: 17%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    border: none;
+    background: #191919;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    float: right;
+}
+
+.send-button:hover{
+    background: #ffe20a;
+    color: #191919;
+}

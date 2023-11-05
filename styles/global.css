@@ -135,3 +135,15 @@ footer a{
 #copyright{
     justify-content: center;
 }
+
+.calltoaction{
+    width: 100%;
+    height: 200px;
+    background-image: url(../images/calltoaction_image.jpg); 
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
