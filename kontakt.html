@@ -28,10 +28,11 @@
     <div id="grid-container">
         <div id="contact-form">
             <h4>Kontaktujte nás</h4>
-            <form>
-                <input type="text" name="email" placeholder="Email">
-                <textarea type="text" name="message" placeholder="Správa"></textarea>
-                <button type="button" class="send-button">Odoslať</button>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="PUBLIC_ACCESS_KEY">
+                <input type="text" name="email" placeholder="Email" required>
+                <textarea type="text" name="message" placeholder="Správa" required></textarea>
+                <button type="submit" class="send-button">Odoslať</button>
             </form>
         </div>
 
