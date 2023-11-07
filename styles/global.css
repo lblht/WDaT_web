@@ -84,17 +84,17 @@ body{
 }
 
 .contact-button{
-    width: 200px;
     padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
     margin: 0px;
     text-align: center;
     font-weight: 400;
     font-size: 20px;
-    border: none;
     background: #cc2936;
     color: #fff;
-    cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .contact-button:hover{
@@ -146,4 +146,18 @@ footer a{
     justify-content: center;
     align-items: center;
     margin-bottom: 0;
+}
+
+input{
+    width: 70%;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    border: none;
+    border-radius: none;
+    font-size: 16px;
+    background-color: #fff;
+    padding: 12px 12px 12px 12px;
+    color: #191919;
+    height: 25px;
 }

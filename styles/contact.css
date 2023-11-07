@@ -66,19 +66,6 @@
     margin: 20px;
 }
 
-input[name=email]{
-    width: 70%;
-    margin: 0;
-    margin-bottom: 10px;
-    margin-left: 10%;
-    border: none;
-    border-radius: none;
-    font-size: 16px;
-    background-color: #fff;
-    padding: 12px 12px 12px 12px;
-    color: #191919;
-}
-
 textarea[name=message]{
     width: 70%;
     margin: 0;

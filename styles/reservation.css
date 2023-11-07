@@ -1,0 +1,80 @@
+#grid-container{
+    display: grid;
+    grid-template-columns: 5% 30% 5% 1fr 5%;
+    grid-template-rows: 100px 100px 350px 50px 270px 500px 50px;
+}
+
+#contact-info-box{
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    background-color: #cc2936;
+    z-index: 10;
+}
+
+#contact-info-box h4{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+    margin-left: 10%;
+}
+
+#service-box h4{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+    margin-left: 10%;
+}
+
+#service-box{
+    grid-column: 2 / 4;
+    grid-row: 5 / 5;
+    background-color: #cc2936;
+    z-index: 10;
+}
+
+.dropdown{
+    margin-left: 10%;
+    width: 100%;
+}
+
+.dropdown-button {
+    background-color: #fff;
+    color: #191919;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    text-align: left;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown-content button {
+    color: #191919; 
+    padding: 12px 12px;
+    font-size: 20px;
+    font-weight: 300;
+    display: block;
+    border: none;
+    background-color: #fff;
+}
+
+.dropdown button:hover {
+    background-color: #1B1C22;
+    color: #fff;
+}
+
+.show{
+    display: block;
+}
+
+#timeslots-box{
+    grid-column: 3 / 5;
+    grid-row: 3 / 7;
+    background-color: #1B1C22;
+}

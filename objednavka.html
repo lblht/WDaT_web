@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/reservation.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="scripts.js"></script>
     <title>Pneuservis</title>
@@ -26,32 +26,28 @@
     </div>
  
     <div id="grid-container">
-        <div id="contact-form">
-            <h4>Kontaktujte nás</h4>
+        <div id="contact-info-box">
+            <h4>Kontaktné údaje</h4>
             <form>
+                <input type="text" name="firstname" placeholder="Meno">
+                <input type="text" name="lastname" placeholder="Priezvisko">
                 <input type="text" name="email" placeholder="Email">
-                <textarea type="text" name="message" placeholder="Správa"></textarea>
-                <button type="button" class="send-button">Odoslať</button>
+                <input type="tel" name="tel" placeholder="Tel. č.">
             </form>
         </div>
-
-        <div id="contact-text">
-            <div id="contact-text-row">
-                <i class="material-icons" style="font-size:60px;">call</i>
-                <p>pneu@servis.sk</p>
-            </div>
-            <div id="contact-text-row">
-                <i class="material-icons" style="font-size:60px;">mail</i>
-                <p>+4219123456789</p>
+        <div id="service-box">
+            <h4>Výber služby</h4>
+            <div class="dropdown">
+                <button onclick="showDropdown()" class="dropdown-button">Prezutie pneumatík</button>
+                <div id="service-dropdown" class="dropdown-content">
+                    <button onclick="">Prezutie pneumatík1</button>
+                    <button onclick="">Prezutie pneumatík2</button>
+                    <button onclick="">Prezutie pneumatík3</button>
+                </div>
             </div>
         </div>
-        
-        <div id="location-bar"></div>
-        <div id="location-text">
-            <i class="material-icons" style="font-size:60px;">location_on</i>
-            <p>Trnava, 917 01 <br> Schumerova 9</p>
+        <div id="timeslots-box">
         </div>
-        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2649.820620700253!2d17.590032!3d48.383182!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476ca083417f3327%3A0x317e314fa55d4696!2sCOOP%20Jednota!5e0!3m2!1ssk!2ssk!4v1697732635929!5m2!1ssk!2ssk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <footer> 
