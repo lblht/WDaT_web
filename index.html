@@ -1,80 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <script src="scripts.js"></script>
-    <title>Pneuservis</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <title>WDaT stránka penuservisu</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-family: "Roboto";
+}
+
+.web-button{
+    padding: 15px 25px;
+    font-weight: 300;
+    font-size: 24px;
+    background: #cc2936;
+    color: #fff;
+    transition: 0.3s;
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    margin: 5px;
+}
+
+.web-button:hover{
+    background: #ffe20a;
+    color: #191919;
+}
+
+.doc-button{
+    padding: 15px 25px;
+    font-weight: 300;
+    font-size: 24px;
+    background: #1b1c22;
+    color: #fff;
+    transition: 0.3s;
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    margin: 5px;
+}
+
+.doc-button:hover{
+    background: #ffe20a;
+    color: #191919;
+}
+
+#logo{
+    margin: 100px;
+    width: 200px;
+}
+</style>
 </head>
 <body>
-
-    <div class="navbar">
-        <div class="logo-text">
-            <a href="index.html"><img src="logo.png" class="logo"></a>
-            Pneuservis
-        </div>
-        <ul>
-            <li><a href="index.html">Domov</a></li>
-            <li><a href="sluzby.html">Ponuka služieb</a></li>
-            <li><a href="objednavka.html">Objednať sa</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="dokumentacia.html">Dokumentácia</a></li>
-        </ul>
-    </div>
-
-    <div id="banner">
-        <div id="banner-content">
-            <h1>Servis pre vaše duše.</h1>
-            <h2>Pneuservisné práce všetkého druhu.</h2>
-            <a href="kontakt.html" type="button" class="contact-button">Kontaktujte nás</a>
-        </div>
-    </div>
-
-    <div id="info-grid-container">
-        <div id="info-image"></div>
-        <div id="info-text">
-            <p>Ponúkame pneumatiky pre osobné, nákladné autá, poľnohospodárske stroje, prívesy a návesy.</p>
-            <p>Opravy a vulkanizácia pneumatík.</p>
-        </div>
-    </div>
-
-    <div id="location-grid-container">
-        <div id="location-text">
-            <h3>Nájdete nás tu:</h3>
-            <p>Trnava, 917 01 <br> Schumerova 9</p>
-            <p>+4219123456789</p>
-        </div>
-        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2649.820620700253!2d17.590032!3d48.383182!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476ca083417f3327%3A0x317e314fa55d4696!2sCOOP%20Jednota!5e0!3m2!1ssk!2ssk!4v1697732635929!5m2!1ssk!2ssk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-    <div class="calltoaction">
-        <a href="kontakt.html" type="button" class="contact-button">Kontaktujte nás</a>
-    </div>
-
-    <footer> 
-        <div class="row">
-            <div>
-                <h4>ADDRESS:</h4>
-                <p>Pneu, s.r.o. <br> Trnava, 917 01 <br> Schumerova 9 <br> SK - Slovakia</p>
-            </div>
-            <div>
-                <h4>CONTACT INFORMATION:</h4>
-                <p>Tel.: +4219123456789 <br> Email: pneu@servis.com</p>
-            </div>
-            <div>
-                <h4>ATTRIBUTIONS:</h4>
-                <a href="https://www.freepik.com/free-photo/hands-only-mechanic-holding-tire-repair-garage-replacement-winter-summer-tires_9819076.htm">Title image by standret</a> on Freepik <br>
-                <a href="https://www.freepik.com/free-photo/car-mechanic-changing-wheels-car_13781745.htm#query=tires&position=20&from_view=search&track=sph">Info image by senivpetro</a> on Freepik <br>
-                <a href="https://www.freepik.com/free-photo/man-choosing-car-checking-tires_27334460.htm#query=car%20wheel&position=27&from_view=keyword&track=ais">CTA image by senivpetro</a> on Freepik
-            </div>
-        </div>
-
-        <div class="row" id="copyright">
-            <p>© 2023 Žiadne práva nie sú vyhradené.</p>
-        </div> 
-    </footer>
-
+    <img src="logo.png" id="logo" alt="logo">
+    <a href="domov.html" type="button" class="web-button">Webová stránka</a>
+    <a href="dokumentacia.html" type="button" class="doc-button">Dokumentácia</a>
+    <a href="manual.html" type="button" class="doc-button">Dizajn manuál</a>
 </body>
 </html>

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap');
 
 *{
     font-family: 'Roboto';
@@ -13,10 +12,6 @@ body{
 
 .row{
     display: flex;
-}
-
-.shadow{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .navbar{
@@ -70,17 +65,6 @@ body{
     margin-bottom: 5px;
     margin-left: 10px;
     margin-right: 10px;
-}
-
-.logo-text{
-    font-family: 'Alumni Sans Collegiate One';
-    color: #cc2936;
-    font-size: 25px;
-    margin: 0;
-    font-weight: 400;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .contact-button{

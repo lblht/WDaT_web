@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="logo.png">
     <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/contact.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles/home.css">
     <script src="scripts.js"></script>
     <title>Pneuservis</title>
 </head>
@@ -23,35 +22,34 @@
             <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
     </div>
- 
-    <div id="grid-container">
-        <div id="contact-form">
-            <h4>Kontaktujte nás</h4>
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="PUBLIC_ACCESS_KEY">
-                <input type="text" name="email" placeholder="Email" required>
-                <textarea type="text" name="message" placeholder="Správa" required></textarea>
-                <button type="submit" class="send-button">Odoslať</button>
-            </form>
-        </div>
 
-        <div id="contact-text">
-            <div id="contact-text-row">
-                <i class="material-icons" style="font-size:60px;">call</i>
-                <p>pneu@servis.sk</p>
-            </div>
-            <div id="contact-text-row">
-                <i class="material-icons" style="font-size:60px;">mail</i>
-                <p>+4219123456789</p>
-            </div>
+    <div id="banner">
+        <div id="banner-content">
+            <h1>Servis pre vaše duše.</h1>
+            <h2>Pneuservisné práce všetkého druhu.</h2>
+            <a href="kontakt.html" type="button" class="contact-button">Kontaktujte nás</a>
         </div>
-        
-        <div id="location-bar"></div>
+    </div>
+
+    <div id="info-grid-container">
+        <div id="info-image"></div>
+        <div id="info-text">
+            <p>Ponúkame pneumatiky pre osobné, nákladné autá, poľnohospodárske stroje, prívesy a návesy.</p>
+            <p>Opravy a vulkanizácia pneumatík.</p>
+        </div>
+    </div>
+
+    <div id="location-grid-container">
         <div id="location-text">
-            <i class="material-icons" style="font-size:60px;">location_on</i>
+            <h3>Nájdete nás tu:</h3>
             <p>Trnava, 917 01 <br> Schumerova 9</p>
+            <p>+4219123456789</p>
         </div>
         <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2649.820620700253!2d17.590032!3d48.383182!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476ca083417f3327%3A0x317e314fa55d4696!2sCOOP%20Jednota!5e0!3m2!1ssk!2ssk!4v1697732635929!5m2!1ssk!2ssk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="calltoaction">
+        <a href="kontakt.html" type="button" class="contact-button">Kontaktujte nás</a>
     </div>
 
     <footer> 

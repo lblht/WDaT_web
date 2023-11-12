@@ -1,7 +1,7 @@
 #grid-container{
     display: grid;
     grid-template-columns: 5% 30% 5% 1fr 5%;
-    grid-template-rows: 100px 100px 350px 50px 270px 500px 50px;
+    grid-template-rows: 100px 100px 350px 50px 270px 1fr 50px;
 }
 
 #contact-info-box{
@@ -42,16 +42,22 @@
     color: #191919;
     padding: 12px;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 300;
     border: none;
     cursor: pointer;
-    width: 70%;
+    width: 75%;
     text-align: left;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .dropdown-content button {
@@ -62,6 +68,8 @@
     display: block;
     border: none;
     background-color: #fff;
+    width: 100%;
+    text-align: left;
 }
 
 .dropdown button:hover {
@@ -77,4 +85,67 @@
     grid-column: 3 / 5;
     grid-row: 3 / 7;
     background-color: #1B1C22;
+    padding-top: 50px;
+    padding-left: 13%;
+    padding-right: 30px;
+    padding-bottom: 50px;
+}
+
+.date-row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.date-text{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.date-text p{
+    margin: 0;
+}
+
+.date-times{
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 900px;
+}
+
+.date-times button{
+    font-weight: 400;
+    font-size: 20px;
+    background: #cc2936;
+    color: #fff;
+    transition: 0.1s;
+    text-decoration: none;
+    border: none;
+    padding: 5px 10px;
+    margin: 2px;
+}
+
+.date-times button:hover{
+    background: #ffe20a;
+    color: #191919;
+}
+
+#submit-reservation-button{
+   background-color: #cc2936;
+   border: none;
+   color: #fff;
+   font-size: 24px;
+   font-weight: 400;
+   padding: 10px 20px;
+   width: 100%;
+   cursor: pointer;
+}
+
+#submit-reservation-button:hover{
+    background: #ffe20a;
+    color: #191919;
 }
