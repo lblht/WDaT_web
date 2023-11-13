@@ -10,12 +10,12 @@ document.addEventListener('scroll', () => {
 
 
 function showDropdown() {
-    document.getElementById("service-dropdown").classList.toggle("show");
+    document.getElementById('service-dropdown').classList.toggle('show');
 }
   
 window.onclick = function(event) {
     if (!event.target.matches('.dropdown-button')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var dropdowns = document.getElementsByClassName('dropdown-content');
         var i;
         for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];

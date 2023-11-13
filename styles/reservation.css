@@ -125,13 +125,16 @@
     transition: 0.1s;
     text-decoration: none;
     border: none;
-    padding: 5px 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin: 2px;
+    width: 80px;
 }
 
 .date-times button:hover{
     background: #ffe20a;
     color: #191919;
+    cursor: pointer;
 }
 
 #submit-reservation-button{

@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="styles/reservation.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="scripts.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <title>Pneuservis</title>
 </head>
 <body>
 
     <div class="navbar">
         <div class="logo-text">
-            <a href="index.html"><img src="logo.png" class="logo"></a>
+            <a href="domov.html"><img src="logo.png" class="logo"></a>
         </div>
         <ul>
             <li><a href="domov.html">Domov</a></li>
@@ -45,286 +46,20 @@
                 </div>
             </div>
         </div>
+
         <div id="timeslots-box">
-            <div class="date-row">
+            <div v-for="day in days"  class="date-row">
                 <div class="date-text">
-                    <p>Pon</p>
-                    <p>11.9.</p>
+                    <p>{{day.name}}</p>
+                    <p>{{day.date}}</p>
                 </div>
                 <div class="date-times">
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
+                    <button v-for="time in day.times" onclick="">{{time.time}}</button>
                 </div>
             </div>
-
-<!-- ----------------------------------------------------------------------TEMP----------------------------------------------------------------------------------------------- -->
-            <div class="date-row">
-                <div class="date-text">
-                    <p>Pon</p>
-                    <p>11.9.</p>
-                </div>
-                <div class="date-times">
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                </div>
-            </div>
-            <div class="date-row">
-                <div class="date-text">
-                    <p>Pon</p>
-                    <p>11.9.</p>
-                </div>
-                <div class="date-times">
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                </div>
-            </div>
-            <div class="date-row">
-                <div class="date-text">
-                    <p>Pon</p>
-                    <p>11.9.</p>
-                </div>
-                <div class="date-times">
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                </div>
-            </div>
-            <div class="date-row">
-                <div class="date-text">
-                    <p>Pon</p>
-                    <p>11.9.</p>
-                </div>
-                <div class="date-times">
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                </div>
-            </div>
-            <div class="date-row">
-                <div class="date-text">
-                    <p>Pon</p>
-                    <p>11.9.</p>
-                </div>
-                <div class="date-times">
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                </div>
-            </div>
-            <div class="date-row">
-                <div class="date-text">
-                    <p>Pon</p>
-                    <p>11.9.</p>
-                </div>
-                <div class="date-times">
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                </div>
-            </div>
-            <div class="date-row">
-                <div class="date-text">
-                    <p>Pon</p>
-                    <p>11.9.</p>
-                </div>
-                <div class="date-times">
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                    <button onclick="">7:00</button>
-                </div>
-            </div>
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-
             <button onclick="" id="submit-reservation-button">Potvrdit rezerváciu</button>
-
         </div>
+
     </div>
 
     <footer> 
@@ -349,6 +84,8 @@
             <p>© 2023 Žiadne práva nie sú vyhradené.</p>
         </div> 
     </footer>
+
+    <script src="timeslots.js"></script>
 
 </body>
 </html>
