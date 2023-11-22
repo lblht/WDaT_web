@@ -8,9 +8,39 @@ document.addEventListener('scroll', () => {
     }
 })
 
-
 function showDropdown() {
     document.getElementById('service-dropdown').classList.toggle('show');
+}
+
+function selectService(service) {
+    document.getElementById('dropdown-button').innerHTML = service;
+    document.getElementById('reservation-service').value = service;
+}
+
+function selectTime(time) {
+    const selectedTime = document.querySelector('.selected-time');
+    if(selectedTime != null)
+        selectedTime.classList.remove('selected-time');
+    
+    document.getElementById(time).classList.add("selected-time")
+    document.getElementById('reservation-time').value = time;
+}
+
+function submitReservation() {
+    if( document.getElementById('reservation-firstname').value == "")
+        alert("Prosím vyplnte meno");
+    else if( document.getElementById('reservation-lastname').value == "")
+        alert("Prosím vyplnte priezvisko");
+    else if( document.getElementById('reservation-email').value == "")
+        alert("Prosím vyplnte email");
+    else if( document.getElementById('reservation-tel').value == "")
+        alert("Prosím vyplnte telefónne číslo");
+    else if( document.getElementById('reservation-service').value == "")
+        alert("Prosím vyberte službu");
+    else if( document.getElementById('reservation-time').value == "")
+        alert("Prosím vyberte čas");
+    else
+        document.getElementById("reservation-form").submit();
 }
   
 window.onclick = function(event) {
@@ -25,3 +55,4 @@ window.onclick = function(event) {
         }
     }
 }
+

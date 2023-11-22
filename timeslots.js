@@ -15,7 +15,9 @@ for (let i = 0; i <= 10; i++) {
                 time = time + '00';
             else
                 time = time + '30';
-            times.push({time: time});
+            let id = day.toString() + '.' + month.toString() + '.' + date.getYear().toString() + '.' + time.toString();
+            let reserved =  "";
+            times.push({time: time, id: id, reserved: reserved});
         }
     }
     this.days.push({
@@ -24,8 +26,6 @@ for (let i = 0; i <= 10; i++) {
         times
     });
 }
-
-console.log(days);
 
 const timeslots = Vue.createApp({
     data() {

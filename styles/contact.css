@@ -101,3 +101,36 @@ textarea[name=message]{
     background: #ffe20a;
     color: #191919;
 }
+
+@media screen and (max-width: 1200px){
+    #grid-container{
+        display: grid;
+        grid-template-columns: 10% 1fr 10%;
+        grid-template-rows: 100px 1fr 550px 100px 200px 500px 50px;
+    }
+    
+    #contact-form{
+        grid-column: 2 / 2;
+        grid-row: 3 / 5;
+    }
+    
+    #contact-text{
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+    }
+    
+    #location-bar{
+        grid-column: 1 / 4;
+        grid-row: 4 / 8;
+    }
+    
+    #location-text{
+        grid-column: 2 / 2;
+        grid-row: 5 / 5;
+    }
+    
+    #map{
+        grid-column: 2 / 2;
+        grid-row: 6 / 6;
+    }
+}

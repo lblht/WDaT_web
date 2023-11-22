@@ -145,3 +145,25 @@ input{
     color: #191919;
     height: 25px;
 }
+
+@media screen and (max-width: 1200px){
+    .navbar{
+        display: none;
+    }
+
+    footer{
+        font-size: 12px;
+    }
+
+    footer h4{
+        margin-left: 10px;
+    }
+    
+    footer p{
+        margin-left: 10px;
+    }
+    
+    footer a{
+        margin-left: 10px;
+    }
+}

@@ -28,21 +28,24 @@
     <div id="grid-container">
         <div id="contact-info-box">
             <h4>Kontaktné údaje</h4>
-            <form>
-                <input type="text" name="firstname" placeholder="Meno">
-                <input type="text" name="lastname" placeholder="Priezvisko">
-                <input type="text" name="email" placeholder="Email">
-                <input type="tel" name="tel" placeholder="Tel. č.">
+            <form id="reservation-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="c06cb15c-0f17-48ad-87cc-26224a8c59d3">
+                <input id="reservation-firstname" type="text" name="firstname" placeholder="Meno">
+                <input id="reservation-lastname" type="text" name="lastname" placeholder="Priezvisko">
+                <input id="reservation-email" type="text" name="email" placeholder="Email">
+                <input id="reservation-tel" type="tel" name="tel" placeholder="Tel. č.">
+                <input id="reservation-service" type="hidden" name="service">
+                <input id="reservation-time" type="hidden" name="time">
             </form>
         </div>
         <div id="service-box">
             <h4>Výber služby</h4>
             <div class="dropdown">
-                <button onclick="showDropdown()" class="dropdown-button">Zvolte službu<i class="material-icons" style="font-size:30px;">expand_more</i></button>
+                <button onclick="showDropdown()" class="dropdown-button" id="dropdown-button">Zvolte službu<i class="material-icons" style="font-size:30px;">expand_more</i></button>
                 <div id="service-dropdown" class="dropdown-content" class="shadow">
-                    <button onclick="">Prezutie pneumatík</button>
-                    <button onclick="">Oprava pneumatík</button>
-                    <button onclick="">Vyváženie kolies</button>
+                    <button onclick="selectService('Prezutie pneumatík')">Prezutie pneumatík</button>
+                    <button onclick="selectService('Oprava pneumatík')">Oprava pneumatík</button>
+                    <button onclick="selectService('Vyváženie kolies')">Vyváženie kolies</button>
                 </div>
             </div>
         </div>
@@ -54,10 +57,10 @@
                     <p>{{day.date}}</p>
                 </div>
                 <div class="date-times">
-                    <button v-for="time in day.times" onclick="">{{time.time}}</button>
+                    <button :id="time.id" :class="time.reserved" v-for="time in day.times" onclick="selectTime(this.id)">{{time.time}}</button>
                 </div>
             </div>
-            <button onclick="" id="submit-reservation-button">Potvrdit rezerváciu</button>
+            <button onclick="submitReservation()" id="submit-reservation-button">Potvrdit rezerváciu</button>
         </div>
 
     </div>

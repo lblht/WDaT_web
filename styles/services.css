@@ -89,3 +89,53 @@ table td, table th{
 }
 
 table tr:nth-child(odd){background-color: #EEEEEE;}
+
+@media screen and (max-width: 1200px){
+    #grid-container{
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 1fr;
+    }
+    
+    #personal-title-box{
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+    }
+    
+    #cargo-title-box{
+        grid-column: 1 / 1;
+        grid-row: 5 / 5;
+    }
+    
+    #personal-text-box{
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+    }
+    
+    #cargo-text-box{
+        grid-column: 1 / 1;
+        grid-row: 6 / 6;
+    }
+    
+    .text-box{
+        font-size: 24px;
+        padding: 10px;
+    }
+    
+    .text-box li{
+        padding: 10px;
+    }
+    
+    #prices{
+        grid-column: 1 / 1;
+        grid-row: 8 / 8;
+    }
+    
+    #prices h2{
+        margin-top: 50px;
+    }
+    
+    table{
+        width: 90%;
+        font-size: 12px;
+    }
+}
