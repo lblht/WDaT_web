@@ -8,6 +8,19 @@ document.addEventListener('scroll', () => {
     }
 })
 
+window.onclick = function(event) {
+    if (!event.target.matches('.dropdown-button')) {
+        var dropdowns = document.getElementsByClassName('dropdown-content');
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
 function showDropdown() {
     document.getElementById('service-dropdown').classList.toggle('show');
 }
@@ -26,6 +39,8 @@ function selectTime(time) {
     document.getElementById('reservation-time').value = time;
 }
 
+let submitEvent = new Event('submitEvent');
+
 function submitReservation() {
     if( document.getElementById('reservation-firstname').value == "")
         alert("Prosím vyplnte meno");
@@ -40,19 +55,8 @@ function submitReservation() {
     else if( document.getElementById('reservation-time').value == "")
         alert("Prosím vyberte čas");
     else
+    {
+        document.dispatchEvent(submitEvent);
         document.getElementById("reservation-form").submit();
-}
-  
-window.onclick = function(event) {
-    if (!event.target.matches('.dropdown-button')) {
-        var dropdowns = document.getElementsByClassName('dropdown-content');
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
     }
 }
-
