@@ -141,7 +141,8 @@
 }
 
 .reserved{
-    display: none;
+    background: #191919!important;
+    pointer-events: none;
 }
 
 .selected-time{

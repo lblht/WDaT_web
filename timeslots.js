@@ -9,6 +9,7 @@ getDocs(reservations).then((snapshot) => {
     snapshot.docs.forEach((doc) => {
         reservedTimeslots.push({ ...doc.data() })
     })
+    console.log(reservedTimeslots);
     setupTimeslots();
 });
 
