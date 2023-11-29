@@ -93,7 +93,7 @@ table tr:nth-child(odd){background-color: #EEEEEE;}
 @media screen and (max-width: 1200px){
     #grid-container{
         grid-template-columns: 100%;
-        grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 1fr;
+        grid-template-rows: 100px 50px 550px 50px 50px 550px 50px 1fr;
     }
     
     #personal-title-box{

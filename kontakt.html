@@ -13,15 +13,16 @@
 <body>
 
     <div class="navbar">
-        <div class="logo-text">
-            <a href="domov.html"><img src="logo.png" class="logo"></a>
+        <a href="domov.html"><img src="logo.png" alt="logo" class="logo"></a>
+        <div class="navarea">
+            <ul id="navbar-links">
+                <li><a href="domov.html">Domov</a></li>
+                <li><a href="sluzby.html">Ponuka služieb</a></li>
+                <li><a href="objednavka.html">Objednať sa</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>  
+            <button class="navbar-dropdown-button" onclick="navbarDropdown()"><i class="material-icons" style="font-size:30px;">menu</i></button>
         </div>
-        <ul>
-            <li><a href="domov.html">Domov</a></li>
-            <li><a href="sluzby.html">Ponuka služieb</a></li>
-            <li><a href="objednavka.html">Objednať sa</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
     </div>
  
     <div id="grid-container">
@@ -37,18 +38,18 @@
 
         <div id="contact-text">
             <div id="contact-text-row">
-                <i class="material-icons" style="font-size:60px;">call</i>
+                <i class="material-icons contact-icons" style="font-size:50px;">mail</i>
                 <p>pneu@servis.sk</p>
             </div>
             <div id="contact-text-row">
-                <i class="material-icons" style="font-size:60px;">mail</i>
+                <i class="material-icons contact-icons" style="font-size:50px;">call</i>
                 <p>+4219123456789</p>
             </div>
         </div>
         
         <div id="location-bar"></div>
         <div id="location-text">
-            <i class="material-icons" style="font-size:60px;">location_on</i>
+            <i class="material-icons contact-icons" style="font-size:60px;">location_on</i>
             <p>Trnava, 917 01 <br> Schumerova 9</p>
         </div>
         <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2649.820620700253!2d17.590032!3d48.383182!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476ca083417f3327%3A0x317e314fa55d4696!2sCOOP%20Jednota!5e0!3m2!1ssk!2ssk!4v1697732635929!5m2!1ssk!2ssk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

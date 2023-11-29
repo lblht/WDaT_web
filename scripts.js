@@ -35,7 +35,7 @@ function selectTime(time) {
     if(selectedTime != null)
         selectedTime.classList.remove('selected-time');
     
-    document.getElementById(time).classList.add("selected-time")
+    document.getElementById(time).classList.add('selected-time')
     document.getElementById('reservation-time').value = time;
 }
 
@@ -58,5 +58,14 @@ function submitReservation() {
     {
         document.dispatchEvent(submitEvent);
         document.getElementById("reservation-form").submit();
+    }
+}
+
+function navbarDropdown() {
+    var links = document.getElementById("navbar-links");
+    if (links.style.display === "block") {
+        links.style.display = "none";
+    } else {
+        links.style.display = "block";
     }
 }
